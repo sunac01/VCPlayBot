@@ -1,0 +1,15 @@
+---
+application:
+  name: "netd-voice-bot"
+  project: "sancak"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "selam"
+  version: "4.4"
+routers:
+- name: "main-netd-voice-bot"
+  routes:
+  - application_name: "netd-voice-bot"
+    paths:
+    - "/*"
